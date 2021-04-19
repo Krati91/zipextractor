@@ -113,7 +113,7 @@ document.addEventListener('click', function(e){
             addDownload(e.target);
         }
         else{
-            $('#jstree_demo_div').jstree(true).open_node(e.target.parentElement);
+            $('#jstree_demo_div').jstree(true).toggle_node(e.target.parentElement);
         }
     }
 });
