@@ -112,6 +112,9 @@ document.addEventListener('click', function(e){
         if(targetClass.includes('jstree-leaf')){
             addDownload(e.target);
         }
+        else{
+            $('#jstree_demo_div').jstree(true).open_node(e.target.parentElement);
+        }
     }
 });
 
