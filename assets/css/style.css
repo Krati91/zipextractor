@@ -66,3 +66,9 @@ li.jstree-node > a.jstree-hovered {
 #extract_another_btn {
   margin-bottom: -15%;
 }
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    min-width: 100%;
+  }
+}
