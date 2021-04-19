@@ -1,0 +1,68 @@
+body {
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+}
+
+.container-fluid {
+  text-align: center !important;
+  margin-top: 10vw;
+}
+
+.wrapper {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  padding: 50px 80px;
+  display: inline-block !important;
+  transition: 150ms;
+  min-width: 620px;
+}
+
+.row_2 {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 1px;
+}
+
+#zip_file {
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 100px;
+  z-index: 2;
+
+  opacity: 0; /* Standard: FF gt 1.5, Opera, Safari */
+  filter: alpha(opacity=0); /* IE lt 8 */
+  -ms-filter: "alpha(opacity=0)"; /* IE 8 */
+  -khtml-opacity: 0; /* Safari 1.x */
+  -moz-opacity: 0; /* FF lt 1.5, Netscape */
+}
+
+.file_tree {
+  text-align: left;
+  display: none;
+}
+
+#download_btn {
+  margin-top: 20px;
+}
+
+#tree_details {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+li.jstree-leaf > a .jstree-icon {
+  background: url("https://img.icons8.com/android/20/000000/file.png") no-repeat;
+}
+
+li.jstree-node > a.jstree-hovered {
+  color: blue;
+  text-decoration: underline;
+}
+
+#extract_another_btn {
+  margin-bottom: -15%;
+}

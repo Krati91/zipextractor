@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/themes/default/style.min.css" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <title>AppLanding Zip Extractor</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <h3>Zip Extractor</h3>
+        <div class="card wrapper">
+            <div class="file_input">
+                <button id="open_file_btn" type="button" class="btn btn-primary">
+                    <div class="row_1">Choose a file</div>
+                    <div class="row_2">from your computer</div>
+                    <input type="file" multiple="multiple" name="" id="zip_file" accept=".zip">
+                </button>
+            </div>
+            <div class="file_tree">
+                <div>
+                    <h3>Zip successfully extracted</h3>
+                    <div class="row_2">Click on a file to download it.</div>
+                </div>
+                <div id="download_btn">
+                    <button id="download_files" type="button" class="btn btn-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                            <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"></path>
+                            <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"></path>
+                          </svg>
+                        Download All Files
+                    </button>
+                </div>
+                <div id="tree_details">
+                    <h6 id="file_name"></h6>
+                    <div id="jstree_demo_div"></div>
+                </div>
+                <button class="btn btn-sm btn-secondary" id="extract_another_btn"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                      </svg>
+                    Extract another archive 
+                </button>
+            </div> 
+        </div>
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.2.1/jstree.min.js"></script>
+<script src="./assets/js/zip.js/dist/zip-full.min.js"></script>
+<script src="./assets/js/script.js"></script>
+
+</html>
